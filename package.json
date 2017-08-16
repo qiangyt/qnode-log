@@ -1,7 +1,7 @@
 {
-    "name": "json-log4js",
-    "version": "1.0.0",
-    "description": "log4js wrapper that formats object arguments to JSON",
+    "name": "qnode-log",
+    "version": "1.0.1",
+    "description": "log4js wrapper that formats object arguments to JSON, by Qiang Yiting",
     "main": "src/Logger.js",
     "scripts": {
         "coverage": "JASMINE_CONFIG_PATH=./jasmine.json node ./node_modules/istanbul/lib/cli.js cover -color ./node_modules/jasmine/bin/jasmine.js",
@@ -9,7 +9,7 @@
         "lint": "./node_modules/.bin/eslint -f stylish --cache --cache-location ./build/eslint/cache/ --color ./src/",
         "watch": "./node_modules/.bin/esw --watch -f stylish --cache --cache-location ./build/eslint/cache/ --color ./src/"
     },
-    "repository": "git@github.com:qiangyt/json-log4js.git",
+    "repository": "git@github.com:qiangyt/qnode-log.git",
     "author": "Qiang Yiting <qiangyt@wxcount.com> (https://github.com/qiangyt)",
     "keywords": [
         "json",
@@ -21,7 +21,7 @@
         "node.js"
     ],
     "bugs": {
-        "url": "https://github.com/qiangyt/json-log4js/issues"
+        "url": "https://github.com/qiangyt/qnode-log/issues"
     },
     "engines": {
         "node": ">=6"
