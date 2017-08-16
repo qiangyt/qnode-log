@@ -1,0 +1,51 @@
+{
+    "name": "json-log4js",
+    "version": "1.0.0",
+    "description": "log4js wrapper that formats object arguments to JSON",
+    "main": "src/Logger.js",
+    "scripts": {
+        "coverage": "JASMINE_CONFIG_PATH=./jasmine.json node ./node_modules/istanbul/lib/cli.js cover -color ./node_modules/jasmine/bin/jasmine.js",
+        "test": "JASMINE_CONFIG_PATH=./jasmine.json node ./node_modules/jasmine/bin/jasmine.js",
+        "lint": "./node_modules/.bin/eslint -f stylish --cache --cache-location ./build/eslint/cache/ --color ./src/",
+        "watch": "./node_modules/.bin/esw --watch -f stylish --cache --cache-location ./build/eslint/cache/ --color ./src/"
+    },
+    "repository": "git@github.com:qiangyt/json-log4js.git",
+    "author": "Qiang Yiting <qiangyt@wxcount.com> (https://github.com/qiangyt)",
+    "keywords": [
+        "json",
+        "logging",
+        "log",
+        "log4j",
+        "log4js",
+        "node",
+        "node.js"
+    ],
+    "bugs": {
+        "url": "https://github.com/qiangyt/json-log4js/issues"
+    },
+    "engines": {
+        "node": ">=6"
+    },
+    "private": false,
+    "license": "MIT",
+    "dependencies": {
+        "log4js": "2.3.0",
+        "sprintf-js": "1.1.1"
+    },
+    "devDependencies": {
+        "babel": "6.23.0",
+        "babel-cli": "6.24.1",
+        "babel-eslint": "7.2.3",
+        "babel-preset-es2015": "6.24.1",
+        "babel-preset-stage-0": "6.24.1",
+        "eslint": "4.3.0",
+        "eslint-stylish": "0.2.0",
+        "eslint-watch": "3.1.2",
+        "istanbul": "1.1.0-alpha.1",
+        "jasmine": "2.7.0",
+        "sinon": "2.4.1"
+    },
+    "browser": {
+        "os": false
+    }
+}
