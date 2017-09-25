@@ -1,6 +1,6 @@
 {
     "name": "qnode-log",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "description": "log4js wrapper that formats object arguments to JSON, by Qiang Yiting",
     "main": "src/Logger.js",
     "scripts": {

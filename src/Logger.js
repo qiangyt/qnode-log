@@ -34,7 +34,8 @@ module.exports = class Logger {
         const jsonArgs = [];
         for (let arg of Array.from(args).slice(1)) {
             if ('object' === typeof(arg)) {
-                jsonArgs.push(JSON.stringify(arg));
+                const j = arg.loggable ? arg.loggable(arg) : arg;
+                jsonArgs.push(JSON.stringify(j));
             } else {
                 jsonArgs.push(arg);
             }
