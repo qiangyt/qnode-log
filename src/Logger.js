@@ -1,7 +1,7 @@
 /* eslint no-process-env: 'off' */
 
 const log4js = require('log4js');
-const Log4jsDefaultLevels = require('log4js/lib/levels')();
+const Log4jsDefaultLevels = require('log4js/lib/levels');
 const vsprintf = require("sprintf-js").vsprintf;
 
 module.exports = class Logger {
