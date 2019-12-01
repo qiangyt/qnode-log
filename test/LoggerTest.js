@@ -13,7 +13,7 @@ describe("Logger test suite: ", function() {
     it("format(): happy", function() {
         const me = { name: 'qnode-log', language: 'node.js' };
         const msg = new Logger('test').format('%s: %s', 'me', me);
-        expect(msg).toBe(`me: ${JSON.stringify(me)}`);
+        expect(msg).toBe(`me: ${JSON.stringify(me, null, 4)}`);
     });
 
     it("isDebugEnabled()", function() {

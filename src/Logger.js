@@ -1,7 +1,7 @@
 /* eslint no-process-env: 'off' */
 
 const log4js = require('log4js');
-const Log4jsDefaultDevels = require('log4js/lib/levels')();
+const Log4jsDefaultLevels = require('log4js/lib/levels')();
 const vsprintf = require("sprintf-js").vsprintf;
 
 module.exports = class Logger {
@@ -57,7 +57,7 @@ module.exports = class Logger {
 
     set level(levelName) {
         this._levelName = levelName;
-        this._internal.level = Log4jsDefaultDevels.getLevel(levelName);
+        this._internal.level = Log4jsDefaultLevels.getLevel(levelName);
     }
 
     warn() {
