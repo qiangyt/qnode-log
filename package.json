@@ -24,13 +24,13 @@
         "url": "https://github.com/qiangyt/qnode-log/issues"
     },
     "engines": {
-        "node": ">=6"
+        "node": ">=8"
     },
     "private": false,
     "license": "MIT",
     "dependencies": {
-        "log4js": "2.3.0",
-        "sprintf-js": "1.1.1"
+        "log4js": "6.1.0",
+        "sprintf-js": "1.1.2"
     },
     "devDependencies": {
         "babel": "6.23.0",
